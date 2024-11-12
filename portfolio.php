@@ -1,45 +1,50 @@
-<main>
-    <section id="portfolio-section">
-        <div class="portfolio-container h2">
-            <h2>Portfólio</h2>
-            <p>"Nossos projetos são mais do que espaços, são experiências de vida. Cada detalhe é pensado para traduzir 
-                o estilo de nossos clientes em ambientes funcionais e esteticamente surpreendentes. Cada projeto reflete 
-                a individualidade e as necessidades de quem vive ou trabalha no espaço. Através de uma abordagem colaborativa 
-                e detalhista, criamos soluções personalizadas para residências e negócios. Confira alguns dos projetos que 
-                nos orgulham e inspire-se para criar o seu."</p>
-            <div class="portfolio-item" class="portfolio-container">
-                <img src="https://detalhesmagicos.com.br/wp-content/uploads/2021/09/1.IMG_3896-p.jpg">
-                <p>Projeto Residencial - Um espaço moderno e aconchegante para uma família jovem, 
-                   trazendo praticidade sem abrir mão da elegância.</p>
-            </div>
-            <div class="portfolio-item">
-                <img src="https://s2.glbimg.com/X1HJ7z95fxMmU6lfrr967eSzdOQ=/620x455/e.glbimg.com/og/ed/f/original/2018/06/19/living-tijolinhos-sofa-rosa-branco-mesa-centro-industrial-quadro-rack-tapete.jpg">
-                <p>Projeto Residencial - Ambiente que une funcionalidade e conforto, refletindo o 
-                   estilo de vida dinâmico de uma família contemporânea.</p>
-            </div>
-            <div class="portfolio-item">
-                <img src="https://static.revistahaus.com.br/revistahaus/2021/10/19155145/Foto-3-Daniele-Grani.jpg">
-                <p>Projeto Comercial - Transformamos um escritório com toques de elegância e modernidade 
-                    que refletem a identidade da empresa.</p>
-            </div>
-            <div class="portfolio-item">
-                <img src="https://sarahpenido.com.br/wp-content/uploads/2024/07/escritorio-estilo-industrial-moderno-pequeno-004.jpg">
-                <p>Projeto Comercial - Reinventamos o ambiente de trabalho com um design que equilibra 
-                    eficiência e sofisticação, buscando promover a produtividade.</p>
-            </div>
-            <div class="portfolio-item">
-                <img src="https://finger.ind.br/wp-content/uploads/2024/01/post-thumbnail-81639cf624c112fbdc52a58ab21d40c8-1170x685.jpeg">
-                <p>Projeto Minimalista - Um design limpo e sofisticado em um espaço equilibrado e funcional, 
-                   valorizando a simplicidadeonde e a harmonia.</p>
-            </div>
-            <div class="portfolio-item">
-                <img src="https://blog.archtrends.com/wp-content/uploads/2023/01/55523_apartamento-rm.webp">
-                <p>Projeto Minimalista - Linhas limpas e um visual descomplicado. Este projeto minimalista 
-                   traz uma sensação de leveza e funcionalidade a cada espaço.</p>
-            </div>
-            
-        </div>
-    </section>
-</main>
+<?php
+include_once("config.inc.php"); // Inclui o arquivo de conexão com o banco
 
+// Consulta para buscar todos os projetos da tabela portfolio
+$sql = "SELECT * FROM portfolio";
+$result = mysqli_query($conexao, $sql);
+?>
 
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="css/estilo.css"> 
+</head>
+<body>
+    <main>
+        <section id="portfolio-section">
+            <div class="portfolio-container h2">
+                <h2>Portfólio</h2>
+                <p>"Em cada um de nossos projetos, buscamos mais do que simplesmente decorar espaços; queremos criar experiências que refletem a identidade e as necessidades de nossos clientes. 
+                    Através de uma abordagem detalhista e personalizada, desenvolvemos ambientes que são tanto funcionais quanto visualmente impressionantes.
+                    De residenciais a comerciais, nossos projetos são pensados para promover conforto, estilo e praticidade. 
+                    Cada detalhe, do mobiliário à iluminação, é escolhido para garantir que cada espaço conte uma história única. Com uma visão inovadora e um compromisso com a qualidade, nossa missão é transformar sonhos em realidade e criar ambientes que encantam e inspiram.
+                    Explore alguns dos projetos que nos orgulham e veja como podemos ajudar a transformar seu espaço."</p>
+
+                <?php
+                // Exibe os projetos do banco de dados
+                if (mysqli_num_rows($result) > 0) {
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        echo "<div class='portfolio-item'>";
+                        echo "<img src='" . htmlspecialchars($row['imagem']) . "' alt='" . htmlspecialchars($row['nome']) . "'>";
+                        echo "<p><strong>" . htmlspecialchars($row['nome']) . "</strong> - " . htmlspecialchars($row['descricao']) . "</p>";
+                        echo "</div>";
+                    }
+                } else {
+                    echo "<p>Nenhum projeto encontrado.</p>";
+                }
+                ?>
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
+
+<?php
+// Fecha a conexão com o banco de dados
+mysqli_close($conexao);
+?>
