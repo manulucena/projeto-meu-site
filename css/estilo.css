@@ -102,9 +102,34 @@ p {
     margin-bottom: 20px;
 }
 
+.home-links {
+    margin-top: 20px;
+}
+
+.button {
+    background-color: #faeda2; /* Um tom escuro que passe elegância */
+    color: #4d4949; /* Cor do texto em branco para contraste */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas para um toque moderno */
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Efeito de hover para destacar */
+.button:hover {
+    background-color: #454545; /* Um tom ligeiramente mais claro */
+    transform: scale(1.05); /* Pequeno aumento para destacar o botão */
+}
+
+
 /* Seção de Portfólio */
 #portfolio-section {
-    background-image: url('https://tuiuti.edu.br/wp-content/uploads/2023/01/design-de-interiores-utp-1.jpg'); /* Substitua pela URL da imagem de fundo */
+    background-image: url('https://blog.construtoralaguna.com.br/wp-content/uploads/2020/12/Design-de-interiores-os-benefi%CC%81cios-que-a-te%CC%81cnica-proporciona-a%CC%80-sau%CC%81de-Construtora-Laguna.jpg'); /* Substitua pela URL da imagem de fundo */
     background-size: cover;
     background-position: center;
     padding: 80px 20px;
@@ -184,8 +209,52 @@ p {
     margin-bottom: 20px;
 }
 
-/* Estilo para a seção "feedbacks" */
-#feedbacks-section {
+/* Estilo para a seção "Como Funciona" */
+#comofunciona-section {
+    background-image: url('https://www.unicesumar.edu.br/blog/wp-content/uploads/2017/03/unicesumar_unicesumaread_image_784-800x490.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    color: white;
+    text-align: center;
+}
+
+.comofunciona-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.etapas {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 4px solid #faeda2; 
+}
+
+.etapas p strong {
+    font-size: 18px;
+    color: #faeda2; /* Cor de destaque */
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Estilo para a seção "depoimentos" */
+#depoimentos-section {
     background-image: url('https://blog.totalcad.com.br/wp-content/uploads/2018/01/169.png'); 
     background-size: cover;
     background-position: center;
@@ -194,7 +263,7 @@ p {
     text-align: center;
 }
 
-.feedbacks-text {
+.depoimentos-text {
     background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para destacar o texto */
     padding: 40px;
     border-radius: 10px;
@@ -213,7 +282,7 @@ p {
     font-size: 18px;
     line-height: 1.8;
     margin-bottom: 20px;
-    font-style: italic; /* Para dar um destaque ao feedback */
+    font-style: italic; /* Para dar um destaque ao depoimento */
 }
 
 /* Estilo para a seção "Produtos" */

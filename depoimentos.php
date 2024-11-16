@@ -2,7 +2,7 @@
 include_once("config.inc.php"); // Inclui o arquivo de conexão com o banco
 
 // Consulta para buscar todos os feedbacks
-$sql = "SELECT * FROM feedbacks ORDER BY id DESC";
+$sql = "SELECT * FROM depoimentos ORDER BY id DESC";
 $result = mysqli_query($conexao, $sql);
 ?>
 
@@ -10,34 +10,34 @@ $result = mysqli_query($conexao, $sql);
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Feedbacks</title>
+    <title>Depoimentos</title>
     <link rel="stylesheet" href="css/estilo.css"> 
 </head>
 <body>
     <main>
-        <section id="feedbacks-section">
-            <div class="feedbacks-text">
-                <h2>Feedbacks</h2>
+        <section id="depoimentos-section">
+            <div class="depoimentos-text">
+                <h2>Depoimentos</h2>
                 
                 <?php
-                // Exibe os feedbacks do banco de dados
+                // Exibe os depoimentos do banco de dados
                 if (mysqli_num_rows($result) > 0) {
                     while ($row = mysqli_fetch_assoc($result)) {
-                        echo "<p>\"" . htmlspecialchars($row['feedback']) . "\" - " . htmlspecialchars($row['nome']) . "</p>";
+                        echo "<p>\"" . htmlspecialchars($row['depoimento']) . "\" - " . htmlspecialchars($row['nome']) . "</p>";
                     }
                 } else {
-                    echo "<p>Nenhum feedback disponível.</p>";
+                    echo "<p>Nenhum depoimento disponível.</p>";
                 }
                 ?>
 
-                <!-- Formulário para novo feedback -->
-                <h2>Deixe seu feedback:</h2>
-                <form action="envia_feedback.php" method="POST">
+                <!-- Formulário para novo depoimento -->
+                <h2>Deixe seu depoimento:</h2>
+                <form action="envia_depoimento.php" method="POST">
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name="nome" required>
                     
-                    <label for="feedback">Feedback:</label>
-                    <textarea id="feedback" name="feedback" rows="5" required></textarea>
+                    <label for="depoimento">Depoimento:</label>
+                    <textarea id="depoimento" name="depoimento" rows="5" required></textarea>
                     
                     <button type="submit">Enviar</button>
                 </form>

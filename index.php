@@ -8,7 +8,7 @@ if (empty($_SERVER['QUERY_STRING'])) {
 } else {
     // Verifica se a página existe para evitar erros
     $pg = isset($_GET['pg']) ? $_GET['pg'] : 'home';
-    $paginas_validas = ['home', 'quemsomos', 'portfolio', 'produtos', 'faleconosco', 'feedbacks'];
+    $paginas_validas = ['home', 'quemsomos', 'portfolio', 'produtos', 'comofunciona', 'faleconosco', 'depoimentos'];
 
     // Carrega apenas as páginas permitidas
     if (in_array($pg, $paginas_validas)) {
