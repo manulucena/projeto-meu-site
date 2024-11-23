@@ -36,10 +36,14 @@
         padding: 60px 20px;
         background-color: #f4f4f4;
         text-align: center;
+        border-radius: 20px;
     }
 
     .team-container {
         display: flex;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 40px;
+        border-radius: 20px;
         justify-content: center;
         gap: 60px; /* Espaçamento entre as cartas */
         flex-wrap: wrap;
@@ -47,7 +51,7 @@
     
 
     .designer-card {
-        background-color: white;
+        background-color: #f4f4f4;
         border-radius: 10px;
         padding: 30px;
         width: 300px; /* Aumentando a largura do campo das fotos */
@@ -109,59 +113,59 @@
         <br>
         <div class="team-container">
             <div class="designer-card">
-            <img src="https://via.placeholder.com/200" alt="Designer 1">
-            <h3>Emanuelle</h3>
+            <img src="Templates/imagens/emanuelle.jpeg" alt="Emanuelle Lucena">
+            <h3>Emanuelle Lucena</h3>
             <h5>Cargo: </h5>
             <p>Designer de Interiores: </p>
-            <h5>Responsabilidades: Criação e desenvolvimento de projetos de interiores, escolha de materiais, paleta de cores, e disposição de móveis.</h5>
+            <h5>Responsabilidades: Criação e desenvolvimento de projetos de interiores, escolha de materiais, paleta de cores e disposição de móveis.</h5>
             <p>WhatsApp: <a href="https://wa.me/5511999999999" target="_blank">+55 83 99999-9999</a></p>
-            <p>Email: <a href="mailto:joao.silva@example.com">emanuelle@example.com</a></p>
+            <p>Email: <a href="mailto:emanuelle@example.com">emanuelle@example.com</a></p>
         </div>
 
             <div class="designer-card">
-                <img src="https://via.placeholder.com/200" alt="Designer 2">
+                <img src="Templates/imagens/flavio.jpeg" alt="Flávio Paiva">
                 <h3>Flávio Paiva</h3>
                 <h5>Cargo: </h5>
                 <p>Arquiteto</p>
                 <h5>Responsabilidades: Trabalha com a estrutura e arquitetura dos ambientes, coordenação de reformas e compatibilização dos projetos de interiores com aspectos estruturais.</h5>
                 <p>WhatsApp: <a href="https://wa.me/5511888888888" target="_blank">+55 83 88888-8888</a></p>
-                <p>Email: <a href="mailto:maria.oliveira@example.com">flavio.paiva@example.com</a></p>
+                <p>Email: <a href="mailto:flavio.paiva@example.com">flavio.paiva@example.com</a></p>
             </div>
             <div class="designer-card">
-                <img src="https://via.placeholder.com/200" alt="Designer 2">
+                <img src="Templates/imagens/davi.jpeg" alt="Davi Menezes">
                 <h3>Davi Menezes</h3>
                 <h5>Cargo: </h5>
                 <p>Designer Gráfico</p>
                 <h5>Responsabilidades: Criação de elementos gráficos para o site, apresentação dos projetos aos clientes, moodboards digitais, e identidade visual.</h5>
                 <p>WhatsApp: <a href="https://wa.me/5511888888888" target="_blank">+55 83 88888-8888</a></p>
-                <p>Email: <a href="mailto:maria.oliveira@example.com">davi.men@example.com</a></p>
+                <p>Email: <a href="mailto:davi.men@example.com">davi.men@example.com</a></p>
             </div>
             <div class="designer-card">
-                <img src="https://via.placeholder.com/200" alt="Designer 2">
-                <h3>Kalina Vieira</h3>
+                <img src="Templates/imagens/kaline.jpg" alt="Kaline Vieira">
+                <h3>Kaline Vieira</h3>
                 <h5>Cargo: </h5>
                 <p>Gerente de Projetos</p>
                 <h5>Responsabilidades: Coordenação de todas as fases do projeto, contato com fornecedores e clientes, e acompanhamento de prazos e orçamento.</h5>
                 <p>WhatsApp: <a href="https://wa.me/5511888888888" target="_blank">+55 83 88888-8888</a></p>
-                <p>Email: <a href="mailto:maria.oliveira@example.com">kalina.vieira@example.com</a></p>
+                <p>Email: <a href="mailto:kaline.vieira@example.com">kaline.vieira@example.com</a></p>
             </div>
             <div class="designer-card">
-                <img src="Templates/imagens/1.jpg">
+                <img src="Templates/imagens/tayna.jpg" alt="Tayná Silva">
                 <h3>Tayná Silva</h3>
                 <h5>Cargo: </h5>
-                <p> Decoradora</p>
-                <h5>Responsabilidades: Foca nos detalhes finais de decoração, como escolha de objetos, acessórios, cortinas, e pequenos detalhes que personalizam o ambiente.</h5>
+                <p> Consultora de Estilo</p>
+                <h5>Responsabilidades: Foca nos detalhes finais de decoração, como escolha de objetos, acessórios, cortinas e pequenos detalhes que personalizam o ambiente.</h5>
                 <p>WhatsApp: <a href="https://wa.me/5511888888888" target="_blank">+55 83 88888-8888</a></p>
-                <p>Email: <a href="mailto:maria.oliveira@example.com">tayna.silva@example.com</a></p>
+                <p>Email: <a href="mailto:tayna.silva@example.com">tayna.silva@example.com</a></p>
             </div>
             <div class="designer-card">
-                <img src="https://via.placeholder.com/200" alt="Designer 2">
-                <h3>Maria Oliveira</h3>
+                <img src="Templates/imagens/wanessa.jpg" alt="Wanessa Gomes">
+                <h3>Wanessa Gomes</h3>
                 <h5>Cargo: </h5>
-                <p>Assistente de Design</p>
+                <p>Designer Assistente</p>
                 <h5>Responsabilidades: Auxílio no desenvolvimento dos projetos, pesquisa de tendências, elaboração de moodboards, e apoio ao designer principal.</h5>
                 <p>WhatsApp: <a href="https://wa.me/5511888888888" target="_blank">+55 83 88888-8888</a></p>
-                <p>Email: <a href="mailto:maria.oliveira@example.com">maria.oliveira@example.com</a></p>
+                <p>Email: <a href="mailto:wanessa@example.com">wanessa@example.com</a></p>
             </div>
             
         </div>
