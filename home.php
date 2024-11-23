@@ -5,7 +5,7 @@
             <p>"Seja bem-vindo ao mundo do design de interiores. Aqui, cada projeto é pensado para refletir o estilo e as 
                 necessidades únicas de nossos clientes, criando ambientes que encantam e funcionam."</p>
             <p>"Combinamos criatividade e funcionalidade para criar espaços únicos e cheios de personalidade. Seja em projetos 
-                residenciais ou comerciais, nosso compromisso é entregar design de alta qualidade, adaptado a cada cliente."</p>
+                residenciais ou comerciais, nosso compromisso é entregar design de alta qualidade, adaptado às necessidades de cada cliente."</p>
             <p>"Explore nossos projetos no portfólio, veja o que nossos clientes dizem nos depoimentos e descubra como podemos trazer seu sonho à realidade."</p>
 
 
