@@ -33,11 +33,6 @@ Desenvolvedor Full-stack
 Kaline Vieira
 Desenvolvedor Full-stack
 
-
-Link do Repositório Github
-https://github.com/manulucena/projeto-site-design-interiores 
-
-
 1. Introdução
 Este documento especifica os requisitos do sistema web Espaço & Estilo. fornecendo aos desenvolvedores e stakeholders as informações necessárias para o projeto e implementação, assim como para a realização dos testes e homologação do sistema.
 
