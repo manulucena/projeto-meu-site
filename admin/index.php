@@ -3,7 +3,7 @@
 <a href="?pg=lista_msg">Lista de Mensagens </a> |
 <a href="?pg=lista_portfolio">Lista Portfólio </a> |
 <a href="?pg=lista_produtos">Lista de Produtos </a> |
-<a href="?pg=lista_feedbacks">Lista de Feedbacks </a> |
+<a href="?pg=lista_depoimentos">Lista de Depoimentos </a> |
 
 <?php
 

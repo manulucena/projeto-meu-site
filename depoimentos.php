@@ -1,7 +1,7 @@
 <?php
 include_once("config.inc.php"); // Inclui o arquivo de conexão com o banco
 
-// Consulta para buscar todos os feedbacks
+// Consulta para buscar todos os depoimentos
 $sql = "SELECT * FROM depoimentos ORDER BY id DESC";
 $result = mysqli_query($conexao, $sql);
 ?>

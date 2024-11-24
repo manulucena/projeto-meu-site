@@ -8,7 +8,7 @@
 
     while($tabela = mysqli_fetch_array($query)){
         echo "Nome: $tabela[nome] <br>";
-        echo "Depoimento: $tabela[depoimentos] <br>";
+        echo "Depoimento: $tabela[depoimento] <br>";
         echo "<a href=?pg=excluir_depoimento&id=$tabela[id]>[x] Excluir depoimento</a><br>";
         echo "<hr>";
     }

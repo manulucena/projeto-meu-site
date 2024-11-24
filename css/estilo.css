@@ -530,6 +530,7 @@ footer a:active {
 /* Estilo do formulário */
 form {
     background-color: #fdec89; 
+    color: rgb(82, 78, 78);
     padding: 50px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
@@ -563,7 +564,7 @@ form textarea:focus {
 form button {
     padding: 12px 20px;
     background-color: #f0d645; /* Amarelo suave */
-    color: white;
+    color: rgb(71, 68, 68);
     border: none;
     border-radius: 5px;
     cursor: pointer;
