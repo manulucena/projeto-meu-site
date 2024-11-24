@@ -35,7 +35,6 @@ $result = mysqli_query($conexao, $sql);
                     <a href="?pg=portfolio&categoria=flat/studio">Flat/Studio</a>
                     <a href="?pg=portfolio&categoria=reforma/fachadas">Reforma/Fachadas</a>
                 </div>
-F
                 <!-- Exibindo os projetos da categoria selecionada -->
                 <div class="portfolio-list">
                 <?php
