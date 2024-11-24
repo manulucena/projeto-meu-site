@@ -107,8 +107,8 @@ p {
 }
 
 .button {
-    background-color: #faeda2; /* Um tom escuro que passe elegância */
-    color: #4d4949; /* Cor do texto em branco para contraste */
+    background-color: #faeda2; 
+    color: #4d4949; 
     padding: 10px 20px;
     border: none;
     border-radius: 5px; /* Bordas arredondadas para um toque moderno */
@@ -122,7 +122,7 @@ p {
 
 /* Efeito de hover para destacar */
 .button:hover {
-    background-color: #454545; /* Um tom ligeiramente mais claro */
+    background-color: #ffffff; /* Um tom ligeiramente mais claro */
     transform: scale(1.05); /* Pequeno aumento para destacar o botão */
 }
 
