@@ -1,17 +1,48 @@
-<h1>Painel Admin</h1>
-<!-- Menu -->
-<a href="?pg=lista_msg">Lista de Mensagens </a> |
-<a href="?pg=lista_portfolio">Lista Portfólio </a> |
-<a href="?pg=lista_produtos">Lista de Produtos </a> |
-<a href="?pg=lista_depoimentos">Lista de Depoimentos </a> |
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Admin</title>
+    <link rel="stylesheet" href="../css/admin.css"> <!-- Link para o CSS -->
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header id="painel-header">
+        <h1>Painel Admin | Espaço & Estilo</h1>
+    </header>
 
-<?php
+    <!-- Menu de Navegação -->
+    <nav>
+        <ul>
+            <li><a href="?pg=lista_msg">Lista Mensagens</a></li>
+            <li><a href="?pg=lista_portfolio">Lista Portfólio</a></li>
+            <li><a href="?pg=lista_produtos">Lista Produtos</a></li>
+            <li><a href="?pg=lista_depoimentos">Lista Depoimentos</a></li>
+        </ul>
+    </nav>
 
-    if(empty($_SERVER['QUERY_STRING'])){
-        $var = "conteudo.php";
-        echo "<h2>Página inicial</h2>";
-        //include_once($var);
-    }else{
-        $pg = $_GET['pg'];
-        include_once("$pg.php");
-    }
+    <!-- Container Principal -->
+
+    <main>
+        <?php
+        include_once "sessao.php";
+
+        if (logado()) {
+            echo "<h3>Bem-vindo(a), <b>$_SESSION[usuario]</b>!</h3>";
+        } else {
+            header("Location: form_login.php");
+            exit();
+        }
+
+        if (empty($_SERVER['QUERY_STRING'])) {
+            $var = "conteudo.php";
+            echo "<h2>Página Inicial</h2>";
+        } else {
+            $pg = $_GET['pg'];
+            include_once("$pg.php");
+        }
+        ?>
+    </main>
+</body>
+</html>

@@ -82,7 +82,7 @@ main {
 }
 
 .home-text {
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.8); 
     padding: 40px;
     border-radius: 10px;
     display: inline-block;
@@ -108,7 +108,7 @@ p {
 
 .button {
     background-color: #faeda2; 
-    color: #4d4949; 
+    color: #353333; 
     padding: 10px 20px;
     border: none;
     border-radius: 5px; /* Bordas arredondadas para um toque moderno */
@@ -137,7 +137,7 @@ p {
 }
 
 .about-text {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 40px;
     border-radius: 10px;
     display: inline-block;
@@ -177,7 +177,7 @@ p {
     flex-wrap: wrap;
     gap: 20px;
     padding: 40px;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.8); 
     border-radius: 10px;
     align-items: center;
 }
@@ -185,7 +185,7 @@ p {
 /* Cada item do portfólio */
 .portfolio-item {
     flex: 1 1 calc(33.333% - 20px); /* Faz com que cada item ocupe 1/3 da linha */
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: #888784;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -282,7 +282,7 @@ p {
     background-position: center;             
     gap: 20px;                  
     padding: 40px;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.8); 
     border-radius: 10px;
     align-items: center;
     
@@ -291,7 +291,7 @@ p {
 /* Cada item do produtos */
 .produtos-item {
     flex: 1 1 calc(33.333% - 20px); /* Faz com que cada item ocupe 1/3 da linha */
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: #888784;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -321,19 +321,19 @@ p {
 
 /* Estilos para links dentro dos itens de produto */
 .produtos-item a:link {
-    color: #faeda2;
+    color: white;
     background-color: transparent;
     text-decoration: none;
 }
 
 .produtos-item a:visited {
-    color: #faeda2;
+    color: white;
     background-color: transparent;
     text-decoration: none;
 }
 
 .produtos-item a:hover {
-    color: rgb(138, 133, 129); /* Cor ao passar o mouse */
+    color: #faeda2; /* Cor ao passar o mouse */
     background-color: transparent;
     text-decoration: underline;
 }
@@ -380,7 +380,7 @@ p {
 }
 
 .comofunciona-text {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     padding: 40px;
     border-radius: 10px;
     display: inline-block;
@@ -424,7 +424,7 @@ p {
 }
 
 .contato-text {
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para destacar o formulário */
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semitransparente para destacar o formulário */
     padding: 40px;
     border-radius: 10px;
     display: inline-block;
@@ -435,7 +435,7 @@ p {
 
 /* Estilo para a seção "depoimentos" */
 #depoimentos-section {
-    background-image: url('https://blog.totalcad.com.br/wp-content/uploads/2018/01/169.png'); 
+    background-image: url('https://img.freepik.com/fotos-premium/arquitetos-e-engenheiros-estao-trabalhando-juntos-para-editar-o-rascunho-da-planta-da-casa-que-foi-projetado-depois-que-foi-apresentado-ao-cliente-e-revisou-parcialmente-o-projeto-design-de-interiores-e-ideias-de-decoracao_528263-4676.jpg?w=740'); 
     background-size: cover;
     background-position: center;
     padding: 80px 20px;
@@ -444,7 +444,7 @@ p {
 }
 
 .depoimentos-text {
-    background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para destacar o texto */
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo semitransparente para destacar o texto */
     padding: 40px;
     border-radius: 10px;
     display: inline-block;
@@ -574,3 +574,4 @@ form button {
 form button:hover {
     background-color: #ebbe2a; /* Amarelo mais escuro ao passar o mouse */
 }
+

@@ -1,4 +1,5 @@
 <main>
+<link rel="stylesheet" href="../css/estilo.css">
     <section id="contato-section">
         <div class="contato-text">
             <h2>Login</h2>

@@ -5,7 +5,7 @@ include_once "../config.inc.php";
  $usuario = $_REQUEST['usuario'];
  $senha = $_REQUEST['senha'];
 
- $sql = "SELECT * FROM usuarios WHERE usuario='$usuario'
+ $sql = "SELECT * FROM usuario WHERE usuario='$usuario'
   AND senha='$senha'";
 
  $resultado = mysqli_query($conexao, $sql);

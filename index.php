@@ -20,3 +20,5 @@ if (empty($_SERVER['QUERY_STRING'])) {
 
 include_once("Templates/rodape.php");
 ?>
+
+

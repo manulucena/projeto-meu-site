@@ -1,0 +1,409 @@
+/* Estilo para o Painel Admin */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #d3cad0, #b8b0b5, #d3cad0); 
+    color: rgba(56, 49, 55, 0.9); 
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Estilo do menu de navegação */
+nav {
+    margin: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #faeda2; /* Fundo amarelo claro */
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgba(56, 49, 55, 0.9); /* Texto marrom escuro */
+    padding: 15px 20px;
+    display: block;
+    font-weight: bold; /* Texto em negrito */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Efeito suave no hover */
+}
+
+nav ul li a:hover {
+    background-color: rgba(56, 49, 55, 0.9); /* Fundo marrom escuro no hover */
+    color: white; /* Texto branco ao passar o mouse */
+}
+
+/* Estilo do cabeçalho */
+header {
+    background-color: rgba(56, 49, 55, 0.9); 
+    color: #faeda2; 
+    padding: 30px 0; 
+    text-align: center;
+    border-radius: 15px; 
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2); 
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; 
+    
+}
+
+/* Texto */
+/* Estilo do conteúdo principal */
+main {
+    background-color: #fff; 
+    padding: 30px; 
+    margin: 20px 0;
+    border-radius: 15px; /* Bordas mais arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Centralizando a saudação "Bem-vindo(a)" */
+main h3 {
+    text-align: center; /* Centraliza o texto */
+    font-size: 24px; /* Tamanho de fonte */
+    color: #4d4949; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+    margin-top: 20px; /* Espaço superior */
+}
+
+/* Centralizando os títulos das listas */
+main h2 {
+    text-align: center; /* Centraliza o texto */
+    font-size: 28px; /* Tamanho de fonte */
+    color: #4d4949; /* Cor do texto */
+    font-weight: bold; /* Negrito */
+    margin: 20px 0; /* Espaçamento */
+}
+
+#painel-container {
+    display: flex; /* Ativa o Flexbox */
+    flex-direction: column; /* Alinha o conteúdo em coluna */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    min-height: calc(100vh - 200px); /* Altura mínima considerando a altura do cabeçalho e rodapé */
+    padding: 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto no conteúdo */
+    
+    border-radius: 15px; /* Bordas arredondadas para seguir o design */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin: 20px auto; /* Centraliza o container horizontalmente */
+    max-width: 1200px; /* Define uma largura máxima para limitar o conteúdo */
+}
+
+/* Estilização geral da seção de mensagens */
+#lista-mensagens {
+    max-width: 800px; /* Largura máxima para centralizar o conteúdo */
+    margin: 20px auto; /* Centraliza horizontalmente */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #faeda2; /* Fundo com tom amarelo suave */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    font-family: Arial, sans-serif; /* Fonte limpa e legível */
+}
+
+/* Estilização de cada mensagem */
+.mensagem {
+    padding: 15px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaço entre as mensagens */
+    background-color: white; /* Fundo branco para destaque */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Estilização dos textos */
+.mensagem h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(56, 49, 55, 0.9); /* Tom de marrom */
+    margin-bottom: 10px;
+}
+
+.mensagem p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(56, 49, 55, 0.8); /* Texto com tom sutilmente mais claro */
+    margin-bottom: 10px;
+}
+
+/* Link para excluir mensagem */
+.mensagem a {
+    text-decoration: none; /* Remove sublinhado */
+    color: #e74c3c; /* Vermelho para indicar ação de exclusão */
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #fad4d4; /* Fundo vermelho claro */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.mensagem a:hover {
+    background-color: #e74c3c; /* Vermelho mais forte no hover */
+    color: white; /* Texto branco no hover */
+}
+
+/* Linha separadora opcional */
+.mensagem hr {
+    border: none;
+    border-top: 1px solid #ddd; /* Linha de separação cinza clara */
+    margin: 15px 0;
+}
+
+/* Estilização geral da seção de portfólio */
+#lista-portfolio {
+    max-width: 800px; /* Largura máxima */
+    margin: 20px auto; /* Centralização horizontal */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #faeda2; /* Fundo amarelo claro */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    font-family: Arial, sans-serif; /* Fonte limpa */
+}
+
+/* Estilização de cada projeto */
+.projeto {
+    padding: 15px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaço entre os projetos */
+    background-color: white; /* Fundo branco */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Títulos e textos */
+.projeto h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(56, 49, 55, 0.9); /* Tom de marrom */
+    margin-bottom: 10px;
+}
+
+.projeto p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(56, 49, 55, 0.8); /* Texto em tom suave */
+    margin-bottom: 10px;
+}
+
+/* Links de ação (Excluir e Alterar) */
+.projeto a {
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Link para excluir projeto */
+.projeto a.excluir {
+    color: #e74c3c; /* Vermelho para excluir */
+    background-color: #fad4d4; /* Fundo vermelho claro */
+}
+
+.projeto a.excluir:hover {
+    background-color: #e74c3c; /* Fundo vermelho mais forte */
+    color: white; /* Texto branco */
+}
+
+/* Link para alterar projeto */
+.projeto a.alterar {
+    color: #3498db; /* Azul para alterar */
+    background-color: #d4eafd; /* Fundo azul claro */
+}
+
+.projeto a.alterar:hover {
+    background-color: #3498db; /* Fundo azul mais forte */
+    color: white; /* Texto branco */
+}
+
+/* Linha separadora opcional */
+.projeto hr {
+    border: none;
+    border-top: 1px solid #ddd; /* Linha de separação discreta */
+    margin: 15px 0;
+}
+
+/* Link para cadastrar novo projeto */
+#novo-projeto {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#novo-projeto a {
+    text-decoration: none;
+    background-color: #4CAF50; /* Verde para destaque */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#novo-projeto a:hover {
+    background-color: #45a049; /* Verde mais escuro no hover */
+}
+
+/* Estilização geral da seção de produtos */
+#lista-produtos {
+    max-width: 800px; /* Largura máxima */
+    margin: 20px auto; /* Centralização horizontal */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #faeda2; /* Fundo amarelo claro */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    font-family: Arial, sans-serif; /* Fonte limpa */
+}
+
+/* Estilização de cada produto */
+.produto {
+    padding: 15px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaço entre os produtos */
+    background-color: white; /* Fundo branco */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Títulos e textos */
+.produto h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(56, 49, 55, 0.9); /* Tom de marrom */
+    margin-bottom: 10px;
+}
+
+.produto p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(56, 49, 55, 0.8); /* Texto em tom suave */
+    margin-bottom: 10px;
+}
+
+/* Links de ação (Excluir e Alterar) */
+.produto a {
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Link para excluir produto */
+.produto a.excluir {
+    color: #e74c3c; /* Vermelho para excluir */
+    background-color: #fad4d4; /* Fundo vermelho claro */
+}
+
+.produto a.excluir:hover {
+    background-color: #e74c3c; /* Fundo vermelho mais forte */
+    color: white; /* Texto branco */
+}
+
+/* Link para alterar produto */
+.produto a.alterar {
+    color: #3498db; /* Azul para alterar */
+    background-color: #d4eafd; /* Fundo azul claro */
+}
+
+.produto a.alterar:hover {
+    background-color: #3498db; /* Fundo azul mais forte */
+    color: white; /* Texto branco */
+}
+
+/* Linha separadora opcional */
+.produto hr {
+    border: none;
+    border-top: 1px solid #ddd; /* Linha de separação discreta */
+    margin: 15px 0;
+}
+
+/* Link para cadastrar novo produto */
+#novo-produto {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#novo-produto a {
+    text-decoration: none;
+    background-color: #4CAF50; /* Verde para destaque */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#novo-produto a:hover {
+    background-color: #45a049; /* Verde mais escuro no hover */
+}
+
+/* Estilização geral da seção de depoimentos */
+#lista-depoimentos {
+    max-width: 800px; /* Largura máxima */
+    margin: 20px auto; /* Centralização horizontal */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #faeda2; /* Fundo amarelo claro */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    font-family: Arial, sans-serif; /* Fonte limpa */
+}
+
+/* Estilização de cada depoimento */
+.depoimento {
+    padding: 15px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaço entre os depoimentos */
+    background-color: white; /* Fundo branco */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* Títulos e textos */
+.depoimento h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(56, 49, 55, 0.9); /* Tom de marrom */
+    margin-bottom: 10px;
+}
+
+.depoimento p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(56, 49, 55, 0.8); /* Texto em tom suave */
+    margin-bottom: 10px;
+}
+
+/* Links de ação (Excluir) */
+.depoimento a {
+    text-decoration: none; /* Remove sublinhado */
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Link para excluir depoimento */
+.depoimento a.excluir {
+    color: #e74c3c; /* Vermelho para excluir */
+    background-color: #fad4d4; /* Fundo vermelho claro */
+}
+
+.depoimento a.excluir:hover {
+    background-color: #e74c3c; /* Fundo vermelho mais forte */
+    color: white; /* Texto branco */
+}
+
+/* Linha separadora */
+.depoimento hr {
+    border: none;
+    border-top: 1px solid #ddd; /* Linha de separação discreta */
+    margin: 15px 0;
+}

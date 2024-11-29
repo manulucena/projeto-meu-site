@@ -1,18 +1,22 @@
+<link rel="stylesheet" href="../css/admin.css">
 <h2>Lista de Mensagens</h2>
 
-<?php
+<div id="lista-mensagens">
+    <?php
+        include_once("../config.inc.php");
 
-    include_once("../config.inc.php");
+        $query = mysqli_query($conexao, "SELECT * FROM contatos");
 
-    $query = mysqli_query($conexao,"SELECT * FROM contatos");
+        while ($tabela = mysqli_fetch_array($query)) {
+            echo "<div class='mensagem'>";
+            echo "<h3>Nome: $tabela[nome]</h3>";
+            echo "<p><strong>E-mail:</strong> $tabela[email]</p>";
+            echo "<p><strong>Assunto:</strong> $tabela[assunto]</p>";
+            echo "<p><strong>Mensagem:</strong> $tabela[mensagem]</p>";
+            echo "<a href='?pg=excluir_mensagem&id=$tabela[id]'>Excluir Mensagem</a>";
+            echo "</div>";
+        }
 
-    while($tabela = mysqli_fetch_array($query)){
-        echo "Nome: $tabela[nome] <br>";
-        echo "E-mail: $tabela[email] <br>";
-        echo "Assunto: $tabela[assunto] <br>";
-        echo "Mensagem: $tabela[mensagem] <br>";
-        echo "<a href=?pg=excluir_mensagem&id=$tabela[id]>[x] Excluir mensagem</a><br>";
-        echo "<hr>";
-    }
-
-    mysqli_close($conexao);
+        mysqli_close($conexao);
+    ?>
+</div>
