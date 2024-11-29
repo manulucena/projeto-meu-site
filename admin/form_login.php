@@ -1,5 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel Admin</title>
+    <link rel="stylesheet" href="../css/admin.css"> <!-- Link para o CSS -->
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header id="painel-header">
+        <h1>Painel Admin | Espaço & Estilo</h1>
+    </header>
+    
 <main>
-<link rel="stylesheet" href="../css/estilo.css">
+<link rel="stylesheet" href="../css/admin.css">
     <section id="contato-section">
         <div class="contato-text">
             <h2>Login</h2>

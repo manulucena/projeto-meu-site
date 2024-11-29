@@ -407,3 +407,79 @@ main h2 {
     border-top: 1px solid #ddd; /* Linha de separação discreta */
     margin: 15px 0;
 }
+
+/* Estilo da pagina inicial */
+.admin-welcome {
+    background-color: #f4f4f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+}
+
+.admin-welcome h2 {
+    text-align: center;
+    color: #444;
+}
+
+.admin-welcome ul {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.admin-welcome li {
+    margin-bottom: 10px;
+}
+
+/* Estilo do formulário */
+form {
+    background-color: #fdec89; 
+    color: rgb(82, 78, 78);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    max-width: 600px;
+    margin: 0 auto; /* Centraliza o formulário */
+    text-align: left;
+}
+
+form label {
+    display: inline-block;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%; 
+    padding: 10px;
+    margin-bottom: 15px; /* Espaço extra entre os campos */
+    border: 2px solid #ebbe2a; /* Borda amarela */
+    border-radius: 5px;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus {
+    border-color: #ebbe2a; /* Mantém a borda amarela ao focar */
+}
+
+form button {
+    padding: 12px 20px;
+    background-color: #f0d645; /* Amarelo suave */
+    color: rgb(71, 68, 68);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: #ebbe2a; /* Amarelo mais escuro ao passar o mouse */
+}

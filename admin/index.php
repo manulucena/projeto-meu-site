@@ -36,13 +36,24 @@
         }
 
         if (empty($_SERVER['QUERY_STRING'])) {
-            $var = "conteudo.php";
             echo "<h2>Página Inicial</h2>";
+            echo "<section class='admin-welcome'>";
+            echo "<p>Bem-vindo(a) ao Painel Administrativo do <b>Espaço & Estilo</b>!</p>";
+            echo "<p>Aqui você tem total controle para gerenciar o conteúdo do site, incluindo:</p>";
+            echo "<ul>";
+            echo "<li><b>Mensagens:</b> Visualize e gerencie mensagens enviadas pelos clientes.</li>";
+            echo "<li><b>Portfólio:</b> Cadastra, edite ou exclua projetos no portfólio.</li>";
+            echo "<li><b>Produtos:</b> Administre os produtos recomendados no site.</li>";
+            echo "<li><b>Depoimentos:</b> Gerencie os depoimentos dos clientes.</li>";
+            echo "</ul>";
+            echo "<p>Use o menu acima para navegar pelas funcionalidades do painel.</p>";
+            echo "</section>";
         } else {
             $pg = $_GET['pg'];
             include_once("$pg.php");
         }
         ?>
-    </main>
+</main>
+
 </body>
 </html>

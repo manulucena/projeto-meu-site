@@ -1,4 +1,5 @@
 <main>
+<link rel="stylesheet" href="../css/admin.css">
     <section id="produto-section">
         <div class="produto-text">
             <h2>Produtos</h2>
