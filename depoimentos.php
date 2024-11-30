@@ -26,7 +26,7 @@ $result = mysqli_query($conexao, $sql);
                         echo "<p>\"" . htmlspecialchars($row['depoimento']) . "\" - " . htmlspecialchars($row['nome']) . "</p>";
                     }
                 } else {
-                    echo "<p>Nenhum depoimento disponível.</p>";
+                    echo "<p>Nenhum depoimento encontrado.</p>";
                 }
                 ?>
 
