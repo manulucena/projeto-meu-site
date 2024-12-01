@@ -192,17 +192,45 @@ Fornecer uma experiência completa para visitantes e administradores, com funcio
 
 
 ## 🖼️ **Protótipos**
-### **Esboços das Páginas**  
-- Página Inicial (Home).  
-- Página Quem Somos.  
-- Página Portfólio.  
-- Página Produtos.  
-- Página Como Funciona.  
-- Página Fale Conosco.  
-- Página Depoimentos.  
-- Painel Admin (Login e Listagens).  
+### Protótipo da Página Inicial  
+![Página Inicial](https://github.com/manulucena/projeto-site-design-interiores/blob/main/imagens%20telas%20site/Tela%20Home.jpg)
 
-*(Adicione as imagens ou links para os protótipos, se disponíveis)*
+### Protótipo da Página Quem Somos  
+![Página Quem Somos](https://github.com/manulucena/projeto-site-design-interiores/blob/main/imagens%20telas%20site/Tela%20Quem%20Somos.jpg)
+
+### Protótipo da Página Portfólio  
+![Página Portfólio](https://github.com/manulucena/projeto-site-design-interiores/blob/main/imagens%20telas%20site/Tela%20Protf%C3%B3lio.jpg)
+
+### Protótipo da Página Produtos  
+![Página Produtos](https://github.com/manulucena/projeto-site-design-interiores/blob/main/imagens%20telas%20site/Tela%20Produtos.jpg)
+
+### Protótipo da Página Como Funciona  
+![Página Como Funciona](https://github.com/manulucena/projeto-site-design-interiores/blob/main/imagens%20telas%20site/Imagem%20Tela%20Como%20Funciona.jpg)
+
+### Protótipo da Página Fale Conosco  
+![Página Fale Conosco](https://github.com/manulucena/projeto-site-design-interiores/blob/main/imagens%20telas%20site/Tela%20Fale%20Conosco.jpg)
+
+### Protótipo da Página Depoimentos  
+![Página Depoimentos](https://github.com/manulucena/projeto-site-design-interiores/blob/main/imagens%20telas%20site/Tela%20Depoimentos.jpg)
+
+### Protótipo da Página Login Painel Admin  
+![Página Login Painel Admin](https://github.com/manulucena/projeto-site-design-interiores/blob/main/imagens%20telas%20site/Tela%20Painel%20Admin%20(login).jpg)
+
+### Protótipo da Página Inicial Painel Admin  
+![Página Inicial Painel Admin](https://github.com/manulucena/projeto-site-design-interiores/blob/main/imagens%20telas%20site/Tela%20Painel%20Admin%20(pagina%20inicial).jpg)
+
+### Protótipo da Página Lista Mensagens Painel Admin  
+![Página Lista Mensagens Painel Admin](https://github.com/manulucena/projeto-site-design-interiores/blob/main/imagens%20telas%20site/Tela%20Painel%20Admin%20(lista%20mensagens).jpg)
+
+### Protótipo da Página Lista Portfólio Painel Admin  
+![Página Lista Portfólio Painel Admin](https://github.com/manulucena/projeto-site-design-interiores/blob/main/imagens%20telas%20site/Tela%20Painel%20Admin%20(lista%20portf%C3%B3lio).jpg)
+
+### Protótipo da Página Lista Produtos Painel Admin  
+![Página Lista Produtos Painel Admin](https://github.com/manulucena/projeto-site-design-interiores/blob/main/imagens%20telas%20site/Tela%20Painel%20Admin%20(lista%20produtos).jpg)
+
+### Protótipo da Página Lista Depoimentos Painel Admin  
+![Página Lista Depoimentos Painel Admin](https://github.com/manulucena/projeto-site-design-interiores/blob/main/imagens%20telas%20site/Tela%20Painel%20Admin%20(lista%20depoimentos).jpg)
+
 
 
 
