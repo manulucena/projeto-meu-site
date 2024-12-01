@@ -1,4 +1,5 @@
 <main>
+<link rel="stylesheet" href="../css/admin.css">
     <section id="portfolio-section">
         <div>
             <h2>Portfólio</h2>

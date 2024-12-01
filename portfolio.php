@@ -1,8 +1,11 @@
 <?php
-include_once("config.inc.php"); // Inclui o arquivo de conexão com o banco
+include_once("config.inc.php"); // Conexão com o banco
 
-// Consulta para buscar todos os projetos da tabela portfolio
-$sql = "SELECT * FROM portfolio";
+// Verifique se uma categoria foi passada na URL e defina um padrão caso contrário
+$categoria = isset($_GET['categoria']) ? $_GET['categoria'] : 'residencial';
+
+// Consulta SQL para buscar projetos da categoria especificada
+$sql = "SELECT * FROM portfolio WHERE categoria = '$categoria'";
 $result = mysqli_query($conexao, $sql);
 ?>
 
@@ -16,7 +19,7 @@ $result = mysqli_query($conexao, $sql);
 <body>
     <main>
         <section id="portfolio-section">
-            <div class="portfolio-container h2">
+            <div class="portfolio-container">
                 <h2>Portfólio</h2>
                 <p>"Em cada um de nossos projetos, buscamos mais do que simplesmente decorar espaços; queremos criar experiências que refletem a identidade e as necessidades de nossos clientes. 
                     Através de uma abordagem detalhista e personalizada, desenvolvemos ambientes que são tanto funcionais quanto visualmente impressionantes.
@@ -24,8 +27,17 @@ $result = mysqli_query($conexao, $sql);
                     Cada detalhe, do mobiliário à iluminação, é escolhido para garantir que cada espaço conte uma história única. Com uma visão inovadora e um compromisso com a qualidade, nossa missão é transformar sonhos em realidade e criar ambientes que encantam e inspiram.
                     Explore alguns dos projetos que nos orgulham e veja como podemos ajudar a transformar seu espaço."</p>
 
+                <!-- Menu de Categorias -->
+                <div class="categorias">
+                    <a href="?pg=portfolio&categoria=residencial">Residencial</a>
+                    <a href="?pg=portfolio&categoria=comercial">Comercial</a>
+                    <a href="?pg=portfolio&categoria=minimalista">Minimalista</a>
+                    <a href="?pg=portfolio&categoria=flat/studio">Flat/Studio</a>
+                    <a href="?pg=portfolio&categoria=reforma/fachadas">Reforma/Fachadas</a>
+                </div>
+                <!-- Exibindo os projetos da categoria selecionada -->
+                <div class="portfolio-list">
                 <?php
-                // Exibe os projetos do banco de dados
                 if (mysqli_num_rows($result) > 0) {
                     while ($row = mysqli_fetch_assoc($result)) {
                         echo "<div class='portfolio-item'>";
@@ -34,9 +46,10 @@ $result = mysqli_query($conexao, $sql);
                         echo "</div>";
                     }
                 } else {
-                    echo "<p>Nenhum projeto encontrado.</p>";
+                    echo "<p>Nenhum projeto encontrado para a categoria selecionada.</p>";
                 }
                 ?>
+                </div>
 
             </div>
         </section>
@@ -45,6 +58,5 @@ $result = mysqli_query($conexao, $sql);
 </html>
 
 <?php
-// Fecha a conexão com o banco de dados
 mysqli_close($conexao);
 ?>
