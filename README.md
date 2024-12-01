@@ -1,94 +1,133 @@
-# Espaço & Estilo | Design | Interiores
+# 🏠 **Espaço & Estilo | Design | Interiores**
 
-## 1. Introdução
-Este documento especifica os requisitos do sistema web **Espaço & Estilo**, fornecendo aos desenvolvedores e stakeholders as informações necessárias para o projeto e implementação, assim como para a realização dos testes e homologação do sistema.
+## 📌 **Introdução**  
+Este projeto visa a criação de um sistema web para a empresa fictícia de design de interiores "Espaço & Estilo". O site reúne informações sobre a empresa, apresenta portfólio de projetos, sugere produtos decorativos e permite interação com clientes.
 
-### 1.1 Objetivo
-O projeto consiste na criação de um sistema web que centraliza informações sobre o trabalho da equipe de design de interiores, apresenta portfólio, sugere produtos de decoração e possibilita a interação com clientes e visitantes do site.
-
----
-
-## 2. Descrição Geral do Sistema
-O sistema será composto por um site com as seguintes funcionalidades principais:
-
-- **Página Inicial (Home):** Apresentação geral do site, destacando os serviços de design.
-- **Quem Somos:** Apresentação da equipe e suas responsabilidades.
-- **Portfólio:** Galeria dinâmica de projetos desenvolvidos.
-- **Produtos:** Página dedicada a itens decorativos sugeridos.
-- **Como Funciona:** Explicação detalhada das etapas do processo criativo.
-- **Fale Conosco:** Formulário para envio de mensagens.
-- **Depoimentos:** Área interativa para avaliações de clientes.
-- **Login Administrativo:** Gestão de conteúdos pelo administrador.
+### 🎯 **Objetivo**  
+Fornecer uma experiência completa para visitantes e administradores, com funcionalidades dinâmicas e uma interface amigável.
 
 ---
 
-## 3. Equipe de Desenvolvimento
-| Nome              | Função                |
-|-------------------|-----------------------|
-| Davi Menezes      | Desenvolvedor Full-stack |
-| Emanuelle Lucena  | Desenvolvedora Full-stack |
-| Flávio Paiva      | Desenvolvedor Full-stack |
-| Tayná Silva       | Desenvolvedora Full-stack |
-| Kaline Vieira     | Desenvolvedora Full-stack |
+## 🛠️ **Funcionalidades Principais**
+- **Página Inicial (Home):** Apresentação geral do site.  
+- **Quem Somos:** Informações sobre a equipe com fotos e descrições.  
+- **Portfólio:** Galeria de projetos com categorias e descrição detalhada.  
+- **Produtos:** Sugestões decorativas cadastradas diretamente no sistema.  
+- **Como Funciona:** Explicação das etapas do processo criativo.  
+- **Fale Conosco:** Formulário para mensagens.  
+- **Depoimentos:** Espaço para feedback dos clientes.  
+- **Administração:** Gerenciamento de conteúdo (projetos, depoimentos, produtos, entre outros).  
 
 ---
 
-## 4. Cronograma do Projeto
-| Data        | Descrição                                                                 |
-|-------------|---------------------------------------------------------------------------|
-| 12/11/2024  | Definição da equipe e tema do projeto                                     |
-| 15/11/2024  | Envio do link do repositório, divisão das funções, elaboração da introdução e descrição geral do sistema |
-| 21/11/2024  | Entrega parcial da evolução do projeto – apresentação e novo commit no GitHub |
-| 29/11/2024  | Última apresentação parcial e fechamento do projeto funcional            |
+## 📅 **Cronograma do Projeto**
+| **Data**       | **Descrição**                                                                 |
+|-----------------|-------------------------------------------------------------------------------|
+| 12/11/2024      | Definição da equipe e tema do projeto.                                       |
+| 15/11/2024      | Envio do link do repositório, divisão das funções e elaboração da introdução e descrição geral. |
+| 21/11/2024      | Entrega parcial com apresentação e commit no GitHub.                        |
+| 29/11/2024      | Última apresentação parcial e entrega do projeto funcional.                 |
 
 ---
 
-## 5. Link do Repositório GitHub
-[Espaço & Estilo - Repositório no GitHub](https://github.com/manulucena/projeto-site-design-interiores)
+## 👨‍💻 **Equipe de Desenvolvimento**
+| **Nome**            | **Função**                      |
+|----------------------|----------------------------------|
+| Davi Menezes         | Desenvolvedor Full-stack        |
+| Emanuelle Lucena     | Desenvolvedora Full-stack       |
+| Flávio Paiva         | Desenvolvedor Full-stack        |
+| Tayná Silva          | Desenvolvedora Full-stack       |
+| Kaline Vieira        | Desenvolvedora Full-stack       |
 
 ---
 
-## 6. Requisitos Funcionais
-
-### [UC001] Acessar Painel Administrador
-**Descrição:** Permite que o administrador acesse a área restrita do sistema.  
-**Atores:** Administrador  
-**Entradas e Pré-condições:** Login e senha válidos.  
-
-**Mensagens:**
-- `M1`: Nome de usuário ou senha incorretos.
+## 🔗 **Link do Repositório**
+[GitHub - Espaço & Estilo](https://github.com/seu-repositorio)
 
 ---
 
-### 7. Prototipação de Banco de Dados
+## 📋 **Requisitos do Sistema**
 
-#### Tabela de Cadastro de Usuário
-| Atributo  | Tipo      | Tamanho | Obrigatório |
-|-----------|-----------|---------|-------------|
-| ID        | Inteiro   | 11      | Sim         |
-| Usuário   | Varchar   | 50      | Sim         |
-| Senha     | Varchar   | 20      | Sim         |
+### **Requisitos Funcionais**  
+- [UC001] Acessar painel administrador.  
+- [UC002] Moderação de depoimentos.  
+- [UC003] Visualizar página "Quem Somos".  
+- [UC004] Gerenciar produtos (criar, alterar, excluir).  
+- [UC005] Gerenciar portfólio (criar, alterar, excluir).  
+- [UC006] Visualizar página "Home".  
+- [UC007] Enviar mensagem pelo formulário "Fale Conosco".  
+- [UC008] Visualizar página "Como Funciona".  
+- [UC009] Visualizar e enviar depoimentos.  
 
-#### Tabela de Contatos
-| Atributo  | Tipo      | Tamanho | Obrigatório |
-|-----------|-----------|---------|-------------|
-| ID        | Inteiro   | 11      | Sim         |
-| Nome      | Varchar   | 100     | Sim         |
-| Email     | Varchar   | 100     | Sim         |
-| Assunto   | Varchar   | 50      | Sim         |
-| Mensagem  | Text      | -       | Sim         |
-
----
-
-## 8. Diagramação e Prototipação de Telas
-
-### Esboço da Página Inicial (Home)
-_**Figura 1:** Imagem Página Inicial (Home)._
+### **Requisitos Não Funcionais**  
+- **Usabilidade:** Interface amigável, responsiva e leve.  
+- **Compatibilidade:** Suporte aos principais navegadores (Chrome, Firefox, Edge, Safari).  
 
 ---
 
-## 9. Conclusão
-Este sistema visa promover a comunicação efetiva entre a equipe de design de interiores e seus clientes, garantindo funcionalidade e estética no ambiente digital.
+## 📊 **Banco de Dados**
+
+### **Estrutura das Tabelas**
+
+#### **Usuários**  
+| **Campo**       | **Descrição**      |
+|------------------|--------------------|
+| ID (PK)          | Identificador único. |
+| Usuário          | Nome do usuário.   |
+| Senha            | Senha do usuário.  |
+
+#### **Contatos**  
+| **Campo**       | **Descrição**      |
+|------------------|--------------------|
+| ID (PK)          | Identificador único. |
+| Nome             | Nome do visitante. |
+| Email            | Email para contato. |
+| Assunto          | Assunto da mensagem. |
+| Mensagem         | Mensagem enviada.  |
+
+#### **Portfólio**  
+| **Campo**       | **Descrição**      |
+|------------------|--------------------|
+| Código (PK)      | Identificador único do projeto. |
+| Nome             | Nome do projeto.  |
+| Categoria        | Categoria do projeto. |
+| Descrição        | Descrição detalhada. |
+| Imagem           | Imagem associada. |
+| Data             | Data de publicação. |
+
+#### **Produtos**  
+| **Campo**       | **Descrição**      |
+|------------------|--------------------|
+| Código (PK)      | Identificador único do produto. |
+| Nome             | Nome do produto.  |
+| Categoria        | Categoria decorativa. |
+| Marca            | Marca do produto. |
+| Preço            | Preço sugerido.   |
+| Imagem           | Imagem ilustrativa. |
+| Fornecedor       | Nome do fornecedor. |
+
+#### **Depoimentos**  
+| **Campo**       | **Descrição**      |
+|------------------|--------------------|
+| ID (PK)          | Identificador único. |
+| Nome             | Nome do cliente.  |
+| Depoimento       | Feedback enviado. |
+
+---
+
+## 🖼️ **Protótipos**
+### **Esboços das Páginas**  
+- Página Inicial (Home).  
+- Página Quem Somos.  
+- Página Portfólio.  
+- Página Produtos.  
+- Página Como Funciona.  
+- Página Fale Conosco.  
+- Página Depoimentos.  
+- Painel Admin (Login e Listagens).  
+
+*(Adicione as imagens ou links para os protótipos, se disponíveis)*
+
 
 
 
