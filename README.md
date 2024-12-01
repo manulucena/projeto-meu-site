@@ -42,7 +42,7 @@ Fornecer uma experiência completa para visitantes e administradores, com funcio
 ---
 
 ## 🔗 **Link do Repositório**
-[GitHub - Espaço & Estilo](https://github.com/seu-repositorio)
+[GitHub - Espaço & Estilo]([https://github.com/seu-repositorio](https://github.com/manulucena/projeto-site-design-interiores))
 
 ---
 
