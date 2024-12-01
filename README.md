@@ -1,330 +1,215 @@
-Documento de visão:
-[Espaco-Estilo-Documentação Sistema 1.0-22-11-24.docx](https://github.com/user-attachments/files/17877662/Espaco-Estilo-Documentacao.Sistema.1.0-22-11-24.docx)
-
-Documento de Requisitos do Sistema Web Espaço & Estilo Versão 1.0
-Projeto aplicado da disciplina Programação Web
-
-Cronograma do Projeto
-
-Data
-Descrição
-12/11/2024
-Definição da equipe e tema do projeto
-15/11/2024
-Envio do link do repositório, divisão das funções, elaboração da Introdução e Descrição geral do sistema
-21/11/2024
-Entrega parcial da evolução do projeto – apresentação e novo commit no Github
-28/11/2024
-Última apresentação parcial e fechamento do projeto funcional
-
-
-Equipe de desenvolvimento
-
-Nome
-Função
-Davi Menezes
-Desenvolvedor Full-stack
-Emanuelle Lucena
-Desenvolvedor Full-stack
-Flávio Paiva
-Desenvolvedor Full-stack
-Tayná Silva
-Desenvolvedor Full-stack
-Kaline Vieira
-Desenvolvedor Full-stack
-
-1. Introdução
-Este documento especifica os requisitos do sistema web Espaço & Estilo. fornecendo aos desenvolvedores e stakeholders as informações necessárias para o projeto e implementação, assim como para a realização dos testes e homologação do sistema.
-
-1.1.1 O projeto consiste na criação de um sistema web que centraliza informações sobre o trabalho da equipe de design de interiores, apresenta portfólio, sugere produtos de decoração e possibilita a interação com clientes e visitantes do site. O sistema deve incluir funcionalidades para envio de mensagens, exibição de depoimentos e gerenciamento de conteúdo por parte da equipe administrativa e de design.
-
-2. Descrição geral do sistema
-
-O sistema será composto por um site de design de interiores com as seguintes funcionalidades principais:
-Página Inicial (Home): Uma apresentação geral do site, destacando os serviços de design de interiores oferecidos e convidando os visitantes a explorarem mais.
-Quem Somos: Uma seção dedicada à apresentação da equipe.
-Portfólio: Uma galeria dinâmica onde os projetos desenvolvidos pela equipe são exibidos. Os projetos cadastrados no banco de dados aparecerão automaticamente nesta seção, permitindo aos usuários explorar os trabalhos realizados com imagens de alta qualidade e descrições detalhadas.
-Produtos: Uma página dedicada a sugestões de itens decorativos e mobiliário, cadastrados diretamente no banco de dados. Esses produtos incluem descrições e links para lojas parceiras, permitindo aos visitantes adquirir itens que complementam seus projetos.
-Como Funciona: Uma explicação clara e detalhada das etapas do nosso processo criativo, desde o levantamento inicial de informações até o acompanhamento da execução do projeto. Essa seção busca transmitir transparência e confiança aos clientes.
-Fale Conosco: Um formulário funcional para que visitantes possam enviar mensagens diretamente à equipe, facilitando a comunicação e o esclarecimento de dúvidas.
-Depoimentos: Uma área interativa onde os clientes podem compartilhar suas experiências e avaliações. Os depoimentos são armazenados no banco de dados e exibidos automaticamente no site, criando um painel de feedbacks real e confiável.
-      Além disso, o sistema contará com uma página de login exclusiva para o administrador e a equipe de design. Por meio dessa área restrita, será possível gerenciar todo o conteúdo do site de forma prática e segura. As funcionalidades incluem a moderação dos feedbacks exibidos, a atualização dos projetos no portfólio, a edição das informações na seção "Quem Somos" e o cadastro de novos produtos na página de sugestões de decoração.
-
-      
-
-3. Requisitos funcionais
-
- [UC001] Acessar Painel Administrador
-Descrição: Permite que o administrador acesse a área restrita do sistema.
-Atores: Administrador
-Entradas e pré-condições: Login e senhas válidos.
-Saídas e pós-condição: não possui.
-
-
-* Mensagens
-M1
-Usuário ou senha incorretos.
-M2
-Acesso negado para usuário não autorizado.
-* Especificação dos Atributos: 
-
-EA1 – Acessar painel de administrador
-
-Dados
-Atributo
-Tipo
-Tam.
-Máscara
-Obrig.
-Usuário
-Varchar
-50
-
-X
-Senha
-Varchar
-20
-
-X
- [UC002] Moderação de depoimentos
-Descrição: Permite ao administrador aprovar ou rejeitar depoimentos enviados pelo cliente.
-Atores: Administrador.
-Entradas e pré-condições: Depoimentos pendentes no sistema.
-Saídas e pós-condição: Depoimentos aprovados exibidos no site.
-
-
-* Mensagens
-M1
-Nenhum depoimento pendente.
-M2
-Depoimento moderado com sucesso.
-* Especificação dos Atributos: 
-
-EA1 – Moderação de depoimentos
-
-Dados
-Atributo
-Tipo
-Tam.
-Máscara
-Obrig.
-Nome
-Varchar
-100
-
-X
-Depoimento
-Text
-
-
-X
-
-[UC003] Visualizar página estática “Quem somos”
-Descrição: Permite visualizar os dados da equipe exibidos na seção “Quem Somos”.
-Atores: Administrador, visitantes.
-Entradas e pré-condições: Acesso ao site.
-Saídas e pós-condição: Página carregada com as informações predefinidas.
-
-* Mensagens
-M1
-Informações atualizadas com sucesso.
-M2
-Campos obrigatórios não preenchidos.
-
-[UC004] Cadastrar novos produtos
-Descrição: Permite inserir novos produtos na página de sugestões de decoração, com imagens, descrição e links para compra. 
-Atores: Administrador.
-Entradas e pré-condições: Login na área restrita.
-Saídas e pós-condição: Produto cadastrado e visível aos usuários.
-
-* Mensagens
-M1
-Produto cadastrado com sucesso.
-M2
-Erro ao salvar o produto
-* Especificação dos Atributos: 
-
-EA1 – Cadastrar novos produtos
-
-Dados
-Atributo
-Tipo
-Tam.
-Máscara
-Obrig.
-Nome
-Varchar
-	50
-
-X
-Categoria
-Varchar
-30
-
-X
-Marca
-Varchar
-50
-
-X
-Preço
-Float
-
-
-X
-Imagem (link)
-Varchar
-200
-
-X
-Fornecedor (link compra)
-Varchar
-200
-
-X
-
-
-[UC005] Gerenciar Portfólio
-Descrição: Permite ao administrador editar e remover projetos no portfólio do site. 
-Atores: Administrador
-Entradas e pré-condições: o usuário deve estar autenticado no sistema.
-Saídas e pós-condição: Projetos atualizados e disponíveis para visualização no site.
-
-* Mensagens
-M1
-Operação realizada com sucesso.
-M2
-Campos obrigatórios não preenchidos.
-
-* Especificação dos Atributos: 
-
-EA1 – Solicitação de demanda com anexo de arquivos. 
-
-Dados
-Atributo
-Tipo
-Tam.
-Máscara
-Obrig.
-Nome
-Varchar
-100
-
-X
-Categoria
-Varchar
-50
-
-X
-Descrição
-Text
-
-
-X
-Imagen
-Varchar
-200
-
-X
-[UC006] Acessar página estática “Home”
-Descrição: Permite visualização da Página Inicial
-Atores: Administrador, visitantes.
-Entradas e pré-condições: acesso ao site.
-Saídas e pós-condição: Página carregada com as informações predefindas.
-
-
-[UC007] Enviar mensagem
-Descrição: Permite aos usuários enviar mensagens.
-Atores: Usuários – clientes.
-Entradas e pré-condições: não possui.
-Saídas e pós-condição: não possui.
-
-* Mensagens
-M1
-Mensagem enviada com sucesso. Em breve nossa equipe irá responder.
-* Especificação dos Atributos: 
-
-EA1 – Enviar mensagem
-
-Dados
-Atributo
-Tipo
-Tam.
-Máscara
-Obrig.
-Nome
-Varchar
-40
-
-X
-Email
-Varchar
-10
-
-X
-Assunto
-Varchar
-10
-
-X
-Mensagem
-Text
-
-
-X
-[UC008] Visualizar página “Como Funciona”
-Descrição: Permite que os visitantes e administrador acessem a seção com explicações sobre as etapas de projeto. 
-Atores: Usuários, Administrador.
-Entradas e pré-condições: Acesso ao site.
-Saídas e pós-condição: Página carregada com o conteúdo predefinido.
-
-4. Requisitos não-funcionais
-
-[NF001] Usabilidade
-A interface com o usuário é de vital importância para o sucesso do sistema. Principalmente por ser um sistema que pode ser utilizado diariamente, o usuário deverá em pouco tempo aprender como utilizar o sistema.
-O sistema terá uma interface amigável ao usuário primário sem se tornar cansativa aos usuários mais experientes, de forma Responsiva e leve.
-
-Prioridade:
-?
-Essencial
-?
-Importante
-?
-Desejável
-[NF002] Compatibilidade
-O sistema deve ser compatível com os navegadores mais utilizados (Chrome, Firefox, Safari e Edge)
-Prioridade:
-?
-Essencial
-?
-Importante
-?
-Desejável
-5. Diagramação e prototipação de Banco de dados
-Definição de tabela de Cadastro de Usuário
-Atributo
-Tipo
-Tam.
-Máscara
-Obrig.
-ID
-Inteiro
-11
-PK
-X
-Nome
-Texto
-255
-
-X
-Login
-Texto
-16
-
-X
-Senha
-Texto
-15
+# 🏠 **Espaço & Estilo | Design | Interiores**
+
+## 📌 **Introdução**  
+Este projeto visa a criação de um sistema web para a empresa fictícia de design de interiores "Espaço & Estilo". O site reúne informações sobre a empresa, apresenta portfólio de projetos, sugere produtos decorativos e permite interação com clientes.
+
+### 🎯 **Objetivo**  
+Fornecer uma experiência completa para visitantes e administradores, com funcionalidades dinâmicas e uma interface amigável.
+
+---
+
+## 🛠️ **Funcionalidades Principais**
+- **Página Inicial (Home):** Apresentação geral do site.  
+- **Quem Somos:** Informações sobre a equipe com fotos e descrições.  
+- **Portfólio:** Galeria de projetos com categorias e descrição detalhada.  
+- **Produtos:** Sugestões decorativas cadastradas diretamente no sistema.  
+- **Como Funciona:** Explicação das etapas do processo criativo.  
+- **Fale Conosco:** Formulário para mensagens.  
+- **Depoimentos:** Espaço para feedback dos clientes.  
+- **Administração:** Gerenciamento de conteúdo (projetos, depoimentos, produtos, entre outros).  
+
+---
+
+## 📅 **Cronograma do Projeto**
+| **Data**       | **Descrição**                                                                 |
+|-----------------|-------------------------------------------------------------------------------|
+| 12/11/2024      | Definição da equipe e tema do projeto.                                       |
+| 15/11/2024      | Envio do link do repositório, divisão das funções e elaboração da introdução e descrição geral. |
+| 21/11/2024      | Entrega parcial com apresentação e commit no GitHub.                        |
+| 29/11/2024      | Última apresentação parcial e entrega do projeto funcional.                 |
+
+---
+
+## 👨‍💻 **Equipe de Desenvolvimento**
+| **Nome**            | **Função**                      |
+|----------------------|----------------------------------|
+| Davi Menezes         | Desenvolvedor Full-stack        |
+| Emanuelle Lucena     | Desenvolvedora Full-stack       |
+| Flávio Paiva         | Desenvolvedor Full-stack        |
+| Tayná Silva          | Desenvolvedora Full-stack       |
+| Kaline Vieira        | Desenvolvedora Full-stack       |
+
+---
+
+## 🔗 **Link do Repositório**
+[GitHub - Espaço & Estilo](https://github.com/manulucena/projeto-site-design-interiores)
+
+---
+
+## 📋 **Requisitos do Sistema**
+
+## Requisitos Funcionais
+
+### [UC001] Acessar Painel Administrador
+**Descrição:** Permite que o administrador acesse a área restrita do sistema.  
+**Atores:** Administrador  
+**Entradas e Pré-condições:** Login e senha válidos.  
+
+**Mensagens:**
+- `M1`: Nome de usuário ou senha incorretos.
+
+---
+
+### [UC002] Moderação de Depoimentos
+**Descrição:** Permite ao administrador aprovar, editar ou excluir depoimentos enviados pelos usuários.  
+**Atores:** Administrador  
+**Entradas e Pré-condições:** Depoimento enviado por um usuário.
+
+**Mensagens:**
+- `M2`: Depoimento aprovado com sucesso.  
+- `M3`: Depoimento excluído com sucesso.
+
+---
+
+### [UC003] Visualizar Página "Quem Somos"
+**Descrição:** Exibe informações da equipe, como fotos e descrições.  
+**Atores:** Visitante  
+**Entradas e Pré-condições:** Acesso à página.
+
+---
+
+### [UC004] Gerenciar Produtos
+**Descrição:** Permite criar, alterar ou excluir informações de produtos recomendados.  
+**Atores:** Administrador  
+**Entradas e Pré-condições:** Dados do produto (nome, categoria, marca, preço, etc.).
+
+**Mensagens:**
+- `M4`: Produto adicionado com sucesso.  
+- `M5`: Produto atualizado com sucesso.  
+- `M6`: Produto excluído com sucesso.
+
+---
+
+### [UC005] Gerenciar Portfólio
+**Descrição:** Permite criar, alterar ou excluir projetos no portfólio.  
+**Atores:** Administrador  
+**Entradas e Pré-condições:** Dados do projeto (nome, categoria, descrição, etc.).
+
+**Mensagens:**
+- `M7`: Projeto adicionado com sucesso.  
+- `M8`: Projeto atualizado com sucesso.  
+- `M9`: Projeto excluído com sucesso.
+
+---
+
+### [UC006] Visualizar Página "Home"
+**Descrição:** Apresenta a visão geral do site com destaques e links para outras seções.  
+**Atores:** Visitante  
+**Entradas e Pré-condições:** Acesso à página inicial.
+
+---
+
+### [UC007] Enviar Mensagem pelo Formulário "Fale Conosco"
+**Descrição:** Permite que visitantes enviem mensagens para a equipe.  
+**Atores:** Visitante  
+**Entradas e Pré-condições:** Nome, e-mail, assunto e mensagem.
+
+**Mensagens:**
+- `M10`: Mensagem enviada com sucesso.
+
+---
+
+### [UC008] Visualizar Página "Como Funciona"
+**Descrição:** Exibe etapas do processo criativo para clientes interessados.  
+**Atores:** Visitante  
+**Entradas e Pré-condições:** Acesso à página.
+
+---
+
+### [UC009] Visualizar e Enviar Depoimentos
+**Descrição:** Permite que visitantes visualizem e enviem depoimentos.  
+**Atores:** Visitante  
+**Entradas e Pré-condições:** Nome e depoimento.
+
+**Mensagens:**
+- `M11`: Depoimento enviado com sucesso.
+
+---
+
+## 📊 **Prototipação de Banco de Dados**
+
+### Tabela de Usuários
+| Atributo  | Tipo      | Tamanho | Obrigatório |
+|-----------|-----------|---------|-------------|
+| ID        | Inteiro   | 11      | Sim         |
+| Usuário   | Varchar   | 50      | Sim         |
+| Senha     | Varchar   | 20      | Sim         |
+
+---
+
+### Tabela de Contatos
+| Atributo  | Tipo      | Tamanho | Obrigatório |
+|-----------|-----------|---------|-------------|
+| ID        | Inteiro   | 11      | Sim         |
+| Nome      | Varchar   | 100     | Sim         |
+| Email     | Varchar   | 100     | Sim         |
+| Assunto   | Varchar   | 50      | Sim         |
+| Mensagem  | Text      | -       | Sim         |
+
+---
+
+### Tabela de Portfólio
+| Atributo  | Tipo      | Tamanho | Obrigatório |
+|-----------|-----------|---------|-------------|
+| Código    | Inteiro   | 11      | Sim         |
+| Nome      | Varchar   | 100     | Sim         |
+| Categoria | Varchar   | 50      | Sim         |
+| Descrição | Text      | -       | Sim         |
+| Imagem    | Varchar   | 255     | Sim         |
+| Data      | Date      | -       | Sim         |
+
+---
+
+### Tabela de Produtos
+| Atributo  | Tipo      | Tamanho | Obrigatório |
+|-----------|-----------|---------|-------------|
+| Código    | Inteiro   | 11      | Sim         |
+| Nome      | Varchar   | 100     | Sim         |
+| Categoria | Varchar   | 50      | Sim         |
+| Marca     | Varchar   | 50      | Não         |
+| Preço     | Decimal   | 10,2    | Sim         |
+| Imagem    | Varchar   | 255     | Sim         |
+| Fornecedor| Varchar   | 100     | Não         |
+
+---
+
+### Tabela de Depoimentos
+| Atributo  | Tipo      | Tamanho | Obrigatório |
+|-----------|-----------|---------|-------------|
+| ID        | Inteiro   | 11      | Sim         |
+| Nome      | Varchar   | 100     | Sim         |
+| Depoimento| Text      | -       | Sim         |
+
+
+## 🖼️ **Protótipos**
+### **Esboços das Páginas**  
+- Página Inicial (Home).  
+- Página Quem Somos.  
+- Página Portfólio.  
+- Página Produtos.  
+- Página Como Funciona.  
+- Página Fale Conosco.  
+- Página Depoimentos.  
+- Painel Admin (Login e Listagens).  
+
+*(Adicione as imagens ou links para os protótipos, se disponíveis)*
+
+
+
+
+
+
+
 
 
 
