@@ -1,3 +1,105 @@
+Projeto Espaço & Estilo | Design de Interiores
+📌 Introdução
+Este projeto visa a criação de um sistema web para a empresa fictícia de design de interiores "Espaço & Estilo". O site reúne informações sobre a empresa, apresenta portfólio de projetos, sugere produtos decorativos e permite interação com clientes.
+
+Objetivo
+Fornecer uma experiência completa para visitantes e administradores, com funcionalidades dinâmicas e uma interface amigável.
+
+🛠️ Funcionalidades Principais
+Página Inicial (Home): Apresentação geral do site.
+Quem Somos: Informações sobre a equipe com fotos e descrições.
+Portfólio: Galeria de projetos com categorias e descrição detalhada.
+Produtos: Sugestões decorativas cadastradas diretamente no sistema.
+Como Funciona: Explicação das etapas do processo criativo.
+Fale Conosco: Formulário para mensagens.
+Depoimentos: Espaço para feedback dos clientes.
+Administração: Gerenciamento de conteúdo (projetos, depoimentos, produtos, entre outros).
+📅 Cronograma do Projeto
+Data	Descrição
+12/11/2024	Definição da equipe e tema do projeto.
+15/11/2024	Envio do link do repositório, divisão das funções e elaboração da introdução e descrição geral.
+21/11/2024	Entrega parcial com apresentação e commit no GitHub.
+29/11/2024	Última apresentação parcial e entrega do projeto funcional.
+👨‍💻 Equipe de Desenvolvimento
+Nome	Função
+Davi Menezes	Desenvolvedor Full-stack
+Emanuelle Lucena	Desenvolvedor Full-stack
+Flávio Paiva	Desenvolvedor Full-stack
+Tayná Silva	Desenvolvedor Full-stack
+Kaline Vieira	Desenvolvedor Full-stack
+🔗 Link do Repositório
+GitHub - Espaço & Estilo
+
+📋 Requisitos do Sistema
+Requisitos Funcionais
+[UC001] Acessar painel administrador.
+[UC002] Moderação de depoimentos.
+[UC003] Visualizar página "Quem Somos".
+[UC004] Gerenciar produtos (criar, alterar, excluir).
+[UC005] Gerenciar portfólio (criar, alterar, excluir).
+[UC006] Visualizar página "Home".
+[UC007] Enviar mensagem pelo formulário "Fale Conosco".
+[UC008] Visualizar página "Como Funciona".
+[UC009] Visualizar e enviar depoimentos.
+Requisitos Não Funcionais
+Usabilidade: Interface amigável, responsiva e leve.
+Compatibilidade: Suporte aos principais navegadores (Chrome, Firefox, Edge, Safari).
+📊 Banco de Dados
+Estrutura das Tabelas
+Usuários
+
+ID (PK)
+Usuário
+Senha
+Contatos
+
+ID (PK)
+Nome
+Email
+Assunto
+Mensagem
+Portfólio
+
+Código (PK)
+Nome
+Categoria
+Descrição
+Imagem
+Data
+Produtos
+
+Código (PK)
+Nome
+Categoria
+Marca
+Preço
+Imagem
+Fornecedor
+Depoimentos
+
+ID (PK)
+Nome
+Depoimento
+🖼️ Protótipos
+Esboços das Páginas
+Página Inicial (Home).
+Página Quem Somos.
+Página Portfólio.
+Página Produtos.
+Página Como Funciona.
+Página Fale Conosco.
+Página Depoimentos.
+Painel Admin (Login e Listagens).
+
+
+
+
+
+
+
+
+
+
 Documento de visão:
 [Espaco-Estilo-Documentação Sistema 1.0-22-11-24.docx](https://github.com/user-attachments/files/17877662/Espaco-Estilo-Documentacao.Sistema.1.0-22-11-24.docx)
 
