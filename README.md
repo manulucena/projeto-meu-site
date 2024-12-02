@@ -61,44 +61,50 @@ Fornecer uma experiência completa para visitantes e administradores, com funcio
 ---
 
 ### [UC002] Moderação de Depoimentos
-**Descrição:** Permite ao administrador aprovar, editar ou excluir depoimentos enviados pelos usuários.  
+**Descrição:** Permite ao administrador aprovar ou excluir depoimentos enviados pelos usuários.  
 **Atores:** Administrador  
 **Entradas e Pré-condições:** Depoimento enviado por um usuário.
 
 **Mensagens:**
-- `M2`: Depoimento aprovado com sucesso.  
-- `M3`: Depoimento excluído com sucesso.
+- `M2`: Depoimento apagado com sucesso.  
+- `M3`: Não foi possível apagar o depoimento.
 
 ---
 
 ### [UC003] Visualizar Página "Quem Somos"
 **Descrição:** Exibe informações da equipe, como fotos e descrições.  
-**Atores:** Visitante  
+**Atores:** Administrador, Visitante  
 **Entradas e Pré-condições:** Acesso à página.
 
 ---
 
 ### [UC004] Gerenciar Produtos
-**Descrição:** Permite criar, alterar ou excluir informações de produtos recomendados.  
+**Descrição:** Permite cadastrar, alterar ou excluir informações de produtos recomendados.  
 **Atores:** Administrador  
-**Entradas e Pré-condições:** Dados do produto (nome, categoria, marca, preço, etc.).
+**Entradas e Pré-condições:** Login na área restrita, dados do produto (nome, categoria, marca, preço, etc.).
 
 **Mensagens:**
-- `M4`: Produto adicionado com sucesso.  
-- `M5`: Produto atualizado com sucesso.  
-- `M6`: Produto excluído com sucesso.
+- `M4`: Produto cadastrado com sucesso.
+- `M5`: Não foi possível cadastrar o produto.  
+- `M6`: Produto alterado com sucesso.
+- `M7`: Não foi possível alterar o produto.  
+- `M8`: Produto excluído com sucesso.
+- `M9`: Não foi possível excluir o produto.
 
 ---
 
 ### [UC005] Gerenciar Portfólio
-**Descrição:** Permite criar, alterar ou excluir projetos no portfólio.  
+**Descrição:** Permite cadastrar, alterar ou excluir projetos no portfólio.  
 **Atores:** Administrador  
-**Entradas e Pré-condições:** Dados do projeto (nome, categoria, descrição, etc.).
+**Entradas e Pré-condições:** Login na área restrita, dados do projeto (nome, categoria, descrição, etc.).
 
 **Mensagens:**
-- `M7`: Projeto adicionado com sucesso.  
-- `M8`: Projeto atualizado com sucesso.  
-- `M9`: Projeto excluído com sucesso.
+- `M10`: Projeto cadastrado com sucesso.
+- `M11`: Não foi possível cadastrar o projeto.  
+- `M12`: Projeto alterado com sucesso. 
+- `M13`: Não foi possível alterar o projeto. 
+- `M14`: Projeto excluído com sucesso.
+- `M15`: Não foi possível excluir o projeto.
 
 ---
 
@@ -115,7 +121,8 @@ Fornecer uma experiência completa para visitantes e administradores, com funcio
 **Entradas e Pré-condições:** Nome, e-mail, assunto e mensagem.
 
 **Mensagens:**
-- `M10`: Mensagem enviada com sucesso.
+- `M16`: Obrigado, $nome! Sua mensagem foi enviada com sucesso.
+- `M17`: Erro ao enviar a mensagem. Por favor, tente novamente.
 
 ---
 
@@ -132,7 +139,8 @@ Fornecer uma experiência completa para visitantes e administradores, com funcio
 **Entradas e Pré-condições:** Nome e depoimento.
 
 **Mensagens:**
-- `M11`: Depoimento enviado com sucesso.
+- `M18`: Obrigado, $nome! Seu depoimento foi enviado com sucesso.
+- `M19`: Erro ao enviar o depoimento. Por favor, tente novamente.
 
 ---
 
