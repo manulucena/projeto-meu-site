@@ -21,7 +21,7 @@ header {
     display: flex; /* Ativa o Flexbox */
     align-items: center; /* Alinha verticalmente logo e título */
     justify-content: center; /* Centraliza horizontalmente logo e título */
-    gap: 40px; /* Espaço entre a logo e o título */
+    gap: 35px; /* Espaço entre a logo e o título */
     border-radius: 15px; 
     box-shadow: 0 6px 30px rgba(0, 0, 0, 0.2); 
 }
