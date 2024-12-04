@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- Cabeçalho -->
-    <header id="painel-header">
+    <header class="header">
         <h1>Painel Admin | Espaço & Estilo</h1>
     </header>
 

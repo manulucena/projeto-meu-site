@@ -1,5 +1,7 @@
 # 🏠 **Espaço & Estilo | Design | Interiores**
 
+![Logo do Espaço & Estilo](imagemlogo/imagemlogo.jpeg)
+
 ## 📌 **Introdução**  
 Este projeto visa a criação de um sistema web para a empresa fictícia de design de interiores "Espaço & Estilo". O site reúne informações sobre a empresa, apresenta portfólio de projetos, sugere produtos decorativos e permite interação com clientes.
 
