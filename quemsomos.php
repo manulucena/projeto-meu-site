@@ -118,7 +118,7 @@
             <h4><p>Designer de Interiores: </p></h4>
             <h4>Responsabilidades: Criação e desenvolvimento de projetos de interiores, escolha de materiais, paleta de cores e disposição de móveis.</h4>
             <p>WhatsApp: <a href="https://wa.me/5511999999999" target="_blank">+55 83 99999-9999</a></p>
-            <p>Email: <a href="mailto:emanuelle@example.com">emanuelle@example.com</a></p>
+            <p>Email: <a href="mailto:emanuelle@gmail.com">emanuelle@gmail.com</a></p>
         </div>
 
             <div class="designer-card">
@@ -128,7 +128,7 @@
                 <h4><p>Arquiteto</p></h4>
                 <h4>Responsabilidades: Trabalha com a estrutura e arquitetura dos ambientes, coordenação de reformas e compatibilização dos projetos de interiores com aspectos estruturais.</h4>
                 <p>WhatsApp: <a href="https://wa.me/5511888888888" target="_blank">+55 83 88888-8888</a></p>
-                <p>Email: <a href="mailto:flavio.paiva@example.com">flavio.paiva@example.com</a></p>
+                <p>Email: <a href="mailto:flavio.paiva@gmail.com">flavio.paiva@gmail.com</a></p>
             </div>
             <div class="designer-card">
                 <img src="Templates/imagens/davi.jpeg" alt="Davi Menezes">
@@ -137,7 +137,7 @@
                 <h4><p>Designer Gráfico</p></h4>
                 <h4>Responsabilidades: Criação de elementos gráficos para o site, apresentação dos projetos aos clientes, moodboards digitais, e identidade visual.</h4>
                 <p>WhatsApp: <a href="https://wa.me/5511888888888" target="_blank">+55 83 88888-8888</a></p>
-                <p>Email: <a href="mailto:davi.men@example.com">davi.men@example.com</a></p>
+                <p>Email: <a href="mailto:davi.men@gmail.com">davi.men@gmail.com</a></p>
             </div>
             <div class="designer-card">
                 <img src="Templates/imagens/kaline.jpg" alt="Kaline Vieira">
@@ -146,7 +146,7 @@
                 <h4><p>Gerente de Projetos</p></h4>
                 <h4>Responsabilidades: Coordenação de todas as fases do projeto, contato com fornecedores e clientes, e acompanhamento de prazos e orçamento.</h4>
                 <p>WhatsApp: <a href="https://wa.me/5511888888888" target="_blank">+55 83 88888-8888</a></p>
-                <p>Email: <a href="mailto:kaline.vieira@example.com">kaline.vieira@example.com</a></p>
+                <p>Email: <a href="mailto:kaline.vieira@gmail.com">kaline.vieira@gmail.com</a></p>
             </div>
             <div class="designer-card">
                 <img src="Templates/imagens/tayna.jpg" alt="Tayná Silva">
@@ -155,7 +155,7 @@
                 <h4><p> Consultora de Estilo</p></h4>
                 <h4>Responsabilidades: Foca nos detalhes finais de decoração, como escolha de objetos, acessórios, cortinas e pequenos detalhes que personalizam o ambiente.</h4>
                 <p>WhatsApp: <a href="https://wa.me/5511888888888" target="_blank">+55 83 88888-8888</a></p>
-                <p>Email: <a href="mailto:tayna.silva@example.com">tayna.silva@example.com</a></p>
+                <p>Email: <a href="mailto:tayna.silva@gmail.com">tayna.silva@gmail.com</a></p>
             </div>
             <div class="designer-card">
                 <img src="Templates/imagens/wanessa.jpg" alt="Wanessa Gomes">
@@ -164,7 +164,7 @@
                 <h4><p>Designer Assistente</p><h4>
                 <h4>Responsabilidades: Auxílio no desenvolvimento dos projetos, pesquisa de tendências, elaboração de moodboards, e apoio ao designer principal.</h4>
                 <p>WhatsApp: <a href="https://wa.me/5511888888888" target="_blank">+55 83 88888-8888</a></p>
-                <p>Email: <a href="mailto:wanessa@example.com">wanessa@example.com</a></p>
+                <p>Email: <a href="mailto:wanessa@gmail.com">wanessa@gmail.com</a></p>
             </div>
             
         </div>
