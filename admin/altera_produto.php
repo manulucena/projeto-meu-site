@@ -7,9 +7,11 @@
     $categoria = $_REQUEST['categoria'];
     $marca = $_REQUEST['marca'];
     $preco = $_REQUEST['preco'];
+    $imagem = $_REQUEST['imagem'];
+    $fornecedor = $_REQUEST['fornecedor'];
 
     $sql = "UPDATE produtos SET
-    nome = '$nome', categoria = '$categoria', marca = '$marca', preco = '$preco' 
+    nome = '$nome', categoria = '$categoria', marca = '$marca', preco = '$preco', imagem = '$imagem', fornecedor = '$fornecedor'
     WHERE codigo = $codigo";
 
     $query = mysqli_query($conexao,$sql);

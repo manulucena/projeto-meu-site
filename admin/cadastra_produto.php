@@ -6,11 +6,13 @@
     $categoria = $_REQUEST['categoria'];
     $marca = $_REQUEST['marca'];
     $preco = $_REQUEST['preco'];
+    $imagem = $_REQUEST['imagem'];
+    $fornecedor = $_REQUEST['fornecedor'];
 
     $sql = "INSERT INTO produtos
-    (nome, categoria, marca, preco)
+    (nome, categoria, marca, preco, imagem, fornecedor)
     VALUES
-    ('$nome','$categoria','$marca','$preco')";
+    ('$nome','$categoria','$marca','$preco', '$imagem', '$fornecedor')";
 
     $query = mysqli_query($conexao,$sql);
 

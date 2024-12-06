@@ -21,18 +21,25 @@
                 <input type="text" id="nome" name="nome" value="<?= $dados['nome']; ?>" required><br><br>
                 
                 <label for="categoria">Categoria:</label>
-                <input type="text" id="categoria" name="categoria" value="<?= $dados['categoria']; ?>"><br><br>
+                <input type="text" id="categoria" name="categoria" value="<?= $dados['categoria']; ?>" required><br><br>
 
                 <label for="marca">Marca:</label>
-                <input type="text" id="marca" name="marca" value="<?= $dados['marca']; ?>"><br><br>
+                <input type="text" id="marca" name="marca" value="<?= $dados['marca']; ?>" required><br><br>
                 
                 <label for="preco">Preço:</label>
-                <textarea type="text" id="preco" name="preco" value="<?= $dados['preco']; ?>" required><br><br>
+                <input type="text" id="preco" name="preco" value="<?= $dados['preco']; ?>" required><br><br>
+                
+                <label for="imagem">Imagem:</label>
+                <textarea id="imagem" name="imagem" required><?= $dados['imagem']; ?></textarea><br><br>
+
+                <label for="fornecedor">Fornecedor:</label>
+                <textarea id="fornecedor" name="fornecedor" required><?= $dados['fornecedor']; ?></textarea><br><br>
                 
                 <button type="submit">Enviar</button>
             </form>
         </div>
     </section>
 </main>
+
 
 

@@ -17,6 +17,8 @@
             echo "<p><strong>Categoria:</strong> $tabela[categoria]</p>";
             echo "<p><strong>Marca:</strong> $tabela[marca]</p>";
             echo "<p><strong>Preço:</strong> R$ " . number_format($tabela['preco'], 2, ',', '.') . "</p>";
+            echo "<p><strong>Imagem:</strong> $tabela[imagem]</p>";
+            echo "<p><strong>Fornecedor:</strong> $tabela[fornecedor]</p>";
             echo "<a class='excluir' href='?pg=excluir_produto&codigo=$tabela[codigo]'>[x] Excluir produto</a> ";
             echo "<a class='alterar' href='?pg=form_altera_produto&codigo=$tabela[codigo]'>[v] Alterar produto</a>";
             echo "</div>";

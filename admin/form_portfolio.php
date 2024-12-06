@@ -8,10 +8,10 @@
                 <input type="text" id="nome" name="nome" required><br><br>
                 
                 <label for="categoria">Categoria:</label>
-                <input type="text" id="categoria" name="categoria"><br><br>
+                <input type="text" id="categoria" name="categoria" required><br><br>
 
                 <label for="descricao">Descrição:</label>
-                <input type="text" id="descricao" name="descricao"><br><br>
+                <input type="text" id="descricao" name="descricao" required><br><br>
                 
                 <label for="imagem">Imagem:</label>
                 <input type="text" id="imagem" name="imagem" required><br><br>
