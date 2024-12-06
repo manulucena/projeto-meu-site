@@ -20,7 +20,7 @@
                 <input type="text" id="imagem" name="imagem" required><br><br>
 
                 <label for="fornecedor">Fornecedor:</label>
-                <input type="text" id="fornecedor" name="foenecedor" required><br><br>
+                <input type="text" id="fornecedor" name="fornecedor" required><br><br>
                 
                 <button type="submit">Enviar</button>
             </form>
